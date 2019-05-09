@@ -2,7 +2,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.bhartipay.commons.crypto.ChecksumUtils;
+import com.signetpay.commons.crypto.ChecksumUtils;
 
 public class JavaIntergration {
 
@@ -10,16 +10,16 @@ public class JavaIntergration {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("AMOUNT", "1.00");
 		map.put("CURRENCY_CODE", "356");
-		map.put("CUST_EMAIL", "neeraj.kumar@bhartipay.com");
-		map.put("CUST_NAME", "BHARTIPAY DEMO");
+		map.put("CUST_EMAIL", "neeraj@signetpay.com");
+		map.put("CUST_NAME", "c DEMO");
 		map.put("CUST_PHONE", "8860705801");
 		map.put("CUST_STREET_ADDRESS1", "Gurgaon");
 		map.put("CUST_ZIP", "122016");
-		map.put("MERCHANTNAME", "BHARTIPAY Demo");
+		map.put("MERCHANTNAME", "signetpay Demo");
 		map.put("ORDER_ID", "BHARTI00001");
 		map.put("PAY_ID", "1804100638381010");
 
-		map.put("PRODUCT_DESC", "BHARTIPAY Demo Transaction");
+		map.put("PRODUCT_DESC", "signetpay Demo Transaction");
 		map.put("RETURN_URL", "https://uat.signetpay.com/crm/jsp/response.jsp");
 		map.put("TXNTYPE", "SALE");
 
@@ -38,7 +38,7 @@ public class JavaIntergration {
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"MERCHANTNAME\" value=\"");
-		httpRequest.append("BHARTIPAY Demo");
+		httpRequest.append("signetpay Demo");
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"ORDER_ID\" value=\"");
@@ -70,11 +70,11 @@ public class JavaIntergration {
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"CUST_EMAIL\" value=\"");
-		httpRequest.append("neeraj.kumar@bhartipay.com");
+		httpRequest.append("neeraj.kumar@signetpay.com");
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"PRODUCT_DESC\" value=\"");
-		httpRequest.append("Bhartipay Pay Product");
+		httpRequest.append("signetpay Pay Product");
 		httpRequest.append("\">");
 
 		httpRequest.append("<input type=\"hidden\" name=\"CURRENCY_CODE\" value=\"");
